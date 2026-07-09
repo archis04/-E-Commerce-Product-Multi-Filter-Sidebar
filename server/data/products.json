@@ -1,1 +1,194 @@
-[]
+[
+  {
+    "id": 1,
+    "name": "Wireless Bluetooth Earbuds",
+    "category": "Electronics",
+    "price": 2499,
+    "rating": 4.3,
+    "image": "https://picsum.photos/seed/electronics-earbuds/400/400"
+  },
+  {
+    "id": 2,
+    "name": "Smart LED TV 43 Inch",
+    "category": "Electronics",
+    "price": 32999,
+    "rating": 4.6,
+    "image": "https://picsum.photos/seed/electronics-tv/400/400"
+  },
+  {
+    "id": 3,
+    "name": "Portable Power Bank 20000mAh",
+    "category": "Electronics",
+    "price": 1499,
+    "rating": 4.1,
+    "image": "https://picsum.photos/seed/electronics-powerbank/400/400"
+  },
+  {
+    "id": 4,
+    "name": "Ergonomic Wireless Mouse",
+    "category": "Electronics",
+    "price": 899,
+    "rating": 3.8,
+    "image": "https://picsum.photos/seed/electronics-mouse/400/400"
+  },
+  {
+    "id": 5,
+    "name": "USB-C Hub 7-in-1 Adapter",
+    "category": "Electronics",
+    "price": 2199,
+    "rating": 2.8,
+    "image": "https://picsum.photos/seed/electronics-hub/400/400"
+  },
+  {
+    "id": 6,
+    "name": "Mechanical Gaming Keyboard",
+    "category": "Electronics",
+    "price": 4599,
+    "rating": 4.7,
+    "image": "https://picsum.photos/seed/electronics-keyboard/400/400"
+  },
+  {
+    "id": 7,
+    "name": "Smart Watch Series 5",
+    "category": "Electronics",
+    "price": 8999,
+    "rating": 4.2,
+    "image": "https://picsum.photos/seed/electronics-smartwatch/400/400"
+  },
+  {
+    "id": 8,
+    "name": "Noise Cancelling Headphones",
+    "category": "Electronics",
+    "price": 5999,
+    "rating": 4.8,
+    "image": "https://picsum.photos/seed/electronics-headphones/400/400"
+  },
+  {
+    "id": 9,
+    "name": "Cotton Crew Neck T-Shirt",
+    "category": "Apparel",
+    "price": 799,
+    "rating": 3.5,
+    "image": "https://picsum.photos/seed/apparel-tshirt/400/400"
+  },
+  {
+    "id": 10,
+    "name": "Slim Fit Denim Jeans",
+    "category": "Apparel",
+    "price": 2499,
+    "rating": 4.3,
+    "image": "https://picsum.photos/seed/apparel-jeans/400/400"
+  },
+  {
+    "id": 11,
+    "name": "Wool Blend Sweater",
+    "category": "Apparel",
+    "price": 3499,
+    "rating": 4.5,
+    "image": "https://picsum.photos/seed/apparel-sweater/400/400"
+  },
+  {
+    "id": 12,
+    "name": "Lightweight Windbreaker Jacket",
+    "category": "Apparel",
+    "price": 3999,
+    "rating": 4.1,
+    "image": "https://picsum.photos/seed/apparel-jacket/400/400"
+  },
+  {
+    "id": 13,
+    "name": "Formal Slim Fit Shirt",
+    "category": "Apparel",
+    "price": 1899,
+    "rating": 4.4,
+    "image": "https://picsum.photos/seed/apparel-shirt/400/400"
+  },
+  {
+    "id": 14,
+    "name": "Stretch Chino Pants",
+    "category": "Apparel",
+    "price": 2199,
+    "rating": 3.9,
+    "image": "https://picsum.photos/seed/apparel-chinos/400/400"
+  },
+  {
+    "id": 15,
+    "name": "Hooded Cotton Sweatshirt",
+    "category": "Apparel",
+    "price": 2799,
+    "rating": 4.6,
+    "image": "https://picsum.photos/seed/apparel-hoodie/400/400"
+  },
+  {
+    "id": 16,
+    "name": "Linen Summer Shirt",
+    "category": "Apparel",
+    "price": 1699,
+    "rating": 2.1,
+    "image": "https://picsum.photos/seed/apparel-linen/400/400"
+  },
+  {
+    "id": 17,
+    "name": "Running Shoes Pro",
+    "category": "Footwear",
+    "price": 4999,
+    "rating": 4.7,
+    "image": "https://picsum.photos/seed/footwear-running/400/400"
+  },
+  {
+    "id": 18,
+    "name": "Classic Casual Sneakers",
+    "category": "Footwear",
+    "price": 3499,
+    "rating": 4.3,
+    "image": "https://picsum.photos/seed/footwear-sneakers/400/400"
+  },
+  {
+    "id": 19,
+    "name": "Leather Formal Shoes",
+    "category": "Footwear",
+    "price": 5499,
+    "rating": 4.5,
+    "image": "https://picsum.photos/seed/footwear-formal/400/400"
+  },
+  {
+    "id": 20,
+    "name": "Waterproof Hiking Boots",
+    "category": "Footwear",
+    "price": 4299,
+    "rating": 4.6,
+    "image": "https://picsum.photos/seed/footwear-hiking/400/400"
+  },
+  {
+    "id": 21,
+    "name": "Slip-On Leather Loafers",
+    "category": "Footwear",
+    "price": 2999,
+    "rating": 4.0,
+    "image": "https://picsum.photos/seed/footwear-loafers/400/400"
+  },
+  {
+    "id": 22,
+    "name": "Canvas Slip-On Shoes",
+    "category": "Footwear",
+    "price": 1999,
+    "rating": 3.2,
+    "image": "https://picsum.photos/seed/footwear-canvas/400/400"
+  },
+  {
+    "id": 23,
+    "name": "Sports Sandals",
+    "category": "Footwear",
+    "price": 1499,
+    "rating": 2.5,
+    "image": "https://picsum.photos/seed/footwear-sandals/400/400"
+  },
+  {
+    "id": 24,
+    "name": "High-Top Basketball Shoes",
+    "category": "Footwear",
+    "price": 6999,
+    "rating": 5.0,
+    "image": "https://picsum.photos/seed/footwear-basketball/400/400"
+  }
+]
