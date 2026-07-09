@@ -1,0 +1,23 @@
+.sort-dropdown-label {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.sort-dropdown {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: #111827;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.sort-dropdown:focus {
+  outline: 2px solid #111827;
+  outline-offset: 1px;
+}

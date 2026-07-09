@@ -1,0 +1,24 @@
+.price-slider-values {
+  margin: 0 0 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.price-slider-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.price-slider-control input {
+  width: 100%;
+  cursor: pointer;
+}
+
+.price-slider-control:last-child {
+  margin-bottom: 0;
+}

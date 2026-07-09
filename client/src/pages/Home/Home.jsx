@@ -4,10 +4,19 @@ import ProductGrid from "../../components/ProductGrid/ProductGrid";
 import { fetchProducts } from "../../services/api";
 import "./Home.css";
 
+const PRICE_LIMITS = { min: 799, max: 32999 };
+
 function Home() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [selectedCategories, setSelectedCategories] = useState([]);
+  const [priceRange, setPriceRange] = useState({
+    min: PRICE_LIMITS.min,
+    max: PRICE_LIMITS.max,
+  });
+  const [selectedRating, setSelectedRating] = useState(null);
+  const [sortBy, setSortBy] = useState("");
 
   useEffect(() => {
     const loadProducts = async () => {
@@ -28,7 +37,17 @@ function Home() {
 
   return (
     <div className="home">
-      <FilterSidebar />
+      <FilterSidebar
+        selectedCategories={selectedCategories}
+        onCategoriesChange={setSelectedCategories}
+        priceRange={priceRange}
+        onPriceRangeChange={setPriceRange}
+        priceLimits={PRICE_LIMITS}
+        selectedRating={selectedRating}
+        onRatingChange={setSelectedRating}
+        sortBy={sortBy}
+        onSortChange={setSortBy}
+      />
 
       <div className="home-content">
         {loading && (
