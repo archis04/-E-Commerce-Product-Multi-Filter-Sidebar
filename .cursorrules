@@ -1,0 +1,419 @@
+# Cursor Project Rules
+
+## Role
+
+You are the senior software engineer for this project.
+
+Before implementing any feature, ALWAYS read `IMPLEMENTATION.md`.
+
+Treat `IMPLEMENTATION.md` as the single source of truth.
+
+If there is any conflict between these rules and `IMPLEMENTATION.md`, follow `IMPLEMENTATION.md`.
+
+Never make architectural decisions that contradict it.
+
+---
+
+# Primary Goal
+
+Build a clean, production-like full-stack application that satisfies every requirement of the assessment.
+
+Priority Order
+
+1. Correctness
+2. Clean Architecture
+3. Readability
+4. Simplicity
+5. Performance
+
+Never sacrifice correctness for optimization.
+
+---
+
+# Architecture
+
+This project follows a strict client-server architecture.
+
+## React Frontend
+
+Responsible ONLY for:
+
+- UI
+- State management
+- User interactions
+- API requests
+- Rendering API responses
+- Loading state
+- Error state
+- Empty state
+
+React must NEVER perform:
+
+- Filtering
+- Sorting
+- Business logic
+- Data processing
+- Validations
+
+---
+
+## Express Backend
+
+Responsible for:
+
+- Loading products
+- Filtering
+- Sorting
+- Validation
+- Business logic
+- Returning responses
+
+The backend is the single source of truth.
+
+Never move business logic into React.
+
+---
+
+# Business Logic Rules
+
+Filtering MUST happen on the server.
+
+Sorting MUST happen on the server.
+
+Filtering MUST execute before sorting.
+
+Never duplicate business logic across frontend and backend.
+
+Never perform filtering or sorting inside React.
+
+---
+
+# Implementation Rules
+
+Implement ONLY what is required by the assessment.
+
+Do NOT introduce:
+
+- Authentication
+- Database
+- Redux
+- Context API
+- Pagination
+- Infinite Scroll
+- Caching
+- WebSockets
+- SSR
+- Additional frameworks
+
+Use the provided static JSON dataset.
+
+Keep the solution simple and clean.
+
+---
+
+# Folder Structure
+
+Follow this structure unless explicitly instructed otherwise.
+
+server/
+
+- app.js
+- routes/
+- controllers/
+- services/
+- data/
+
+client/
+
+- components/
+- pages/
+- services/
+- App.jsx
+
+Do not create unnecessary folders.
+
+Do not over-engineer.
+
+---
+
+# Controller Rules
+
+Controllers should remain thin.
+
+Controllers should only:
+
+- Receive request
+- Validate request
+- Call service
+- Return response
+
+Controllers must NOT contain business logic.
+
+---
+
+# Service Rules
+
+Business logic belongs ONLY inside services.
+
+Services are responsible for:
+
+- Filtering
+- Sorting
+- Future calculations
+
+Keep service functions as pure as possible.
+
+---
+
+# React Rules
+
+Use:
+
+- Functional Components
+- Hooks
+- useState
+- useEffect
+
+Keep state minimal.
+
+Avoid storing derived state.
+
+React should render exactly what the backend returns.
+
+Never filter data locally.
+
+Never sort data locally.
+
+---
+
+# API Rules
+
+Use REST.
+
+Endpoint:
+
+GET /api/products
+
+Use query parameters.
+
+Return JSON.
+
+Use proper HTTP status codes.
+
+Keep the API contract stable.
+
+If backend response changes, update the frontend accordingly.
+
+---
+
+# Component Rules
+
+Each component should have a single responsibility.
+
+FilterSidebar
+
+- Contains all filters
+
+CategoryFilter
+
+- Category checkboxes
+
+PriceSlider
+
+- Price selection
+
+RatingFilter
+
+- Rating radio buttons
+
+SortDropdown
+
+- Sorting UI
+
+ProductGrid
+
+- Displays products
+
+ProductCard
+
+- Displays a single product
+
+Avoid large components.
+
+Keep components reusable.
+
+---
+
+# Styling Rules
+
+Keep UI:
+
+- Clean
+- Responsive
+- Readable
+
+Desktop
+
+- Sticky sidebar
+- Product grid on right
+
+Mobile
+
+- Sidebar above products
+
+Do not spend excessive time on animations.
+
+Functionality is more important than visual polish.
+
+---
+
+# Code Style
+
+Use meaningful variable names.
+
+Avoid one-letter variables.
+
+Prefer early returns.
+
+Keep functions small.
+
+Avoid deeply nested conditions.
+
+Avoid duplicated code.
+
+Remove unused imports.
+
+Remove dead code.
+
+Prefer readability over clever code.
+
+---
+
+# Error Handling
+
+Gracefully handle:
+
+- Loading
+- Empty results
+- Invalid filters
+- Backend failures
+
+Never allow the application to crash because of invalid user input.
+
+---
+
+# Filtering Rules
+
+Category
+
+If no categories selected
+
+→ Skip category filtering.
+
+Price
+
+If min/max missing
+
+→ Skip price filtering.
+
+Rating
+
+If rating missing
+
+→ Skip rating filtering.
+
+Final condition:
+
+Category
+AND
+Price
+AND
+Rating
+
+A product must satisfy every active filter.
+
+---
+
+# Sorting Rules
+
+Sorting always happens AFTER filtering.
+
+Supported sort values:
+
+- priceAsc
+- priceDesc
+- ratingDesc
+
+If no sorting is selected,
+
+Return filtered products unchanged.
+
+---
+
+# Performance
+
+Avoid unnecessary state updates.
+
+Avoid unnecessary API calls.
+
+When appropriate, debounce rapid slider changes.
+
+Do not optimize prematurely.
+
+Readability is more important than micro-optimizations.
+
+---
+
+# Modification Rules
+
+Modify ONLY files relevant to the requested feature.
+
+Do not rewrite unrelated files.
+
+Do not refactor unrelated code.
+
+Preserve the existing architecture.
+
+---
+
+# Response Format
+
+Whenever implementing a feature, briefly explain:
+
+1. What changed
+2. Files modified
+3. Why this approach was chosen
+
+Keep explanations concise.
+
+---
+
+# Before Completing Any Task
+
+Verify:
+
+✓ Code compiles
+
+✓ No unused variables
+
+✓ No React warnings
+
+✓ No duplicated logic
+
+✓ Business logic remains on backend
+
+✓ Folder structure unchanged
+
+✓ IMPLEMENTATION.md requirements satisfied
+
+---
+
+# If Unsure
+
+Do not guess.
+
+Follow `IMPLEMENTATION.md`.
+
+Choose the simplest solution that satisfies the assessment.
+
+Do not introduce unnecessary complexity.
