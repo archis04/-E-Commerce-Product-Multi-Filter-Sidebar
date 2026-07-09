@@ -1,0 +1,17 @@
+.filter-sidebar {
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: #f9fafb;
+}
+
+.filter-sidebar-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.125rem;
+}
+
+.filter-sidebar-placeholder {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.875rem;
+}

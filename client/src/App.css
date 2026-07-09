@@ -5,12 +5,12 @@
 }
 
 .app-header {
-  padding: 2rem;
+  padding: 1.5rem 2rem;
   border-bottom: 1px solid #e5e7eb;
 }
 
 .app-header h1 {
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.25rem;
   font-size: 1.75rem;
 }
 
@@ -21,10 +21,13 @@
 
 .app-main {
   flex: 1;
-  padding: 2rem;
+  padding: 1.5rem 2rem 2rem;
 }
 
-.placeholder {
-  margin: 0;
-  color: #374151;
+@media (max-width: 767px) {
+  .app-header,
+  .app-main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }

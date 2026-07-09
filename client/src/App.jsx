@@ -1,3 +1,4 @@
+import Home from "./pages/Home/Home";
 import "./App.css";
 
 function App() {
@@ -5,10 +6,10 @@ function App() {
     <div className="app">
       <header className="app-header">
         <h1>Product Catalog</h1>
-        <p>E-commerce product browsing application</p>
+        <p>Browse products with multi-filter sidebar</p>
       </header>
       <main className="app-main">
-        <p className="placeholder">Filters and product grid coming soon.</p>
+        <Home />
       </main>
     </div>
   );
