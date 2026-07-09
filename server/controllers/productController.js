@@ -1,8 +1,8 @@
-import { getAllProducts } from "../services/filterService.js";
+import { getFilteredProducts } from "../services/filterService.js";
 
 export const getProducts = (req, res) => {
   try {
-    const products = getAllProducts();
+    const products = getFilteredProducts(req.query);
 
     res.json({
       success: true,

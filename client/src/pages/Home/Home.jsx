@@ -23,7 +23,13 @@ function Home() {
       try {
         setLoading(true);
         setError(null);
-        const data = await fetchProducts();
+        const data = await fetchProducts({
+          categories: selectedCategories,
+          minPrice: priceRange.min,
+          maxPrice: priceRange.max,
+          rating: selectedRating,
+          sort: sortBy,
+        });
         setProducts(data.products);
       } catch {
         setError("Failed to load products. Please try again later.");
@@ -33,7 +39,14 @@ function Home() {
     };
 
     loadProducts();
-  }, []);
+  }, [selectedCategories, priceRange.min, priceRange.max, selectedRating, sortBy]);
+
+  const handleResetFilters = () => {
+    setSelectedCategories([]);
+    setPriceRange({ min: PRICE_LIMITS.min, max: PRICE_LIMITS.max });
+    setSelectedRating(null);
+    setSortBy("");
+  };
 
   return (
     <div className="home">
@@ -63,7 +76,18 @@ function Home() {
           </div>
         )}
 
-        {!loading && !error && <ProductGrid products={products} />}
+        {!loading && !error && products.length === 0 && (
+          <div className="status-message empty-state" role="status">
+            <p>No items match your criteria.</p>
+            <button className="reset-filters-button" onClick={handleResetFilters}>
+              Reset Filters
+            </button>
+          </div>
+        )}
+
+        {!loading && !error && products.length > 0 && (
+          <ProductGrid products={products} />
+        )}
       </div>
     </div>
   );
